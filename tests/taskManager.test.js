@@ -142,7 +142,7 @@ describe('getActiveCount', () => {
     tasks = addTask(tasks, 'Task 2');
     tasks = addTask(tasks, 'Task 3');
     tasks = toggleTask(tasks, tasks[0].id); // complete Task 1
-    expect(getActiveCount(tasks)).toBe(2);  // FAILS with current bug
+    expect(getActiveCount(tasks)).toBe(2);
   });
 });
 
